@@ -129,10 +129,12 @@ body {
 
 .hello {
   grid-area: hello;
-  background: var(--c-accent);
+  color: var(--c-white);
+  background: var(--c-body-bg);
   border-radius: 0 1rem 1rem 1rem;
   padding: 0.8rem;
   font-size: 0.8rem;
+  line-height: 1rem;
   position: fixed;
   left: 4.2rem;
   top: 4.2rem;
