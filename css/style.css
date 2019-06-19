@@ -1,0 +1,107 @@
+@import url("./normalize.css");
+@import url("./reset.css");
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300|Roboto&display=swap&subset=latin-ext");
+
+:root {
+  --c-white: #f8f8f8;
+  --c-black: #000000;
+  --c-grey: #545454;
+  --c-body-bg: #2c2141;
+  --c-accent: #ed6d05;
+  --c-link: #e20613;
+}
+
+body {
+  background: var(--c-body-bg);
+  color: var(--c-black);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.main {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.card {
+  display: grid;
+  grid-template-areas:
+    "photo"
+    "header"
+    "content";
+  grid-gap: 2rem;
+  justify-items: center;
+  background: var(--c-white);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+@media screen and (min-width: 667px) {
+  .card {
+    max-width: 624px;
+    grid-template-areas:
+      "photo header"
+      "photo content";
+    padding: 2rem;
+  }
+}
+
+.card__photo {
+  grid-area: photo;
+  width: 148px;
+  border-radius: 50%;
+}
+
+.card__header {
+  grid-area: header;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media screen and (min-width: 667px) {
+  .card__header {
+    text-align: left;
+    justify-self: start;
+  }
+}
+
+.card__name {
+  margin: 0;
+  font-size: 2.25rem;
+}
+
+.card__job {
+  color: var(--c-grey);
+  margin: 0;
+  font-style: italic;
+  font-size: 1.125rem;
+}
+
+.card__content {
+  grid-area: content;
+}
+.card__description {
+  line-height: 1.375em;
+  text-align: justify;
+  margin-top: 0;
+}
+
+.card__description:last-child {
+  margin-bottom: 0;
+}
+
+.card__accent {
+  color: var(--c-accent);
+  font-weight: 400;
+}
+
+.card__link {
+  color: var(--c-link);
+  text-decoration: none;
+}
