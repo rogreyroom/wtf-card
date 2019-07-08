@@ -4,7 +4,7 @@ const hi = document.querySelector(".hi--js");
 const hello = (name, age) => `Miło Cię poznać.<br>
                              ${name}. O! Twój wiek to ${age}.<br>
                              ${
-                               age > 31
+                               age > 41
                                  ? "Mój jest nieco mniejszy."
                                  : "Mój jest nieco większy."
                              }`;
@@ -14,7 +14,7 @@ const helloName = name => `Miło Cię poznać! ${name}`;
 const helloAge = age => `Miło Cię poznać nieznajomy! <br>
                          Więc Twój wiek to ${age}. <br>
                          ${
-                           age > 31
+                           age > 41
                              ? "Mój jest nieco mniejszy."
                              : "Mój jest nieco większy."
                          }`;
