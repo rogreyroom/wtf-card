@@ -54,6 +54,7 @@ body {
 .card__photo {
   grid-area: photo;
   width: 148px;
+  height: 148px;
   border-radius: 50%;
 }
 
